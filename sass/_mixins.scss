@@ -1,0 +1,27 @@
+%head{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+%form-group{
+    & input{
+        border: none;
+        outline: none;
+        padding: 1rem 3.5rem 1rem 1.5rem;
+        border-radius: 5px;
+        background-color: $grey;
+        transition: box-shadow .15s ease;
+
+        &:focus{
+            box-shadow: 0 0 0 1px $blue, 0 0 0 4px $light-blue;
+        }
+    }
+    & .icon{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1.5rem;
+        color: $dark-grey;
+    }
+}
